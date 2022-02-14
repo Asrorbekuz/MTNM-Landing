@@ -1,0 +1,14 @@
+.about {
+  .col-12:first-of-type {
+    order: 0;
+    @include respond(tab-por) {
+      order: -1;
+    }
+  }
+  .col-12:last-of-type {
+    order: -1;
+    @include respond(tab-por) {
+      order: 0;
+    }
+  }
+}
